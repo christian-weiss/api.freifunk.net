@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Lint all shell scripts
-      run: pwd && env && ls -al
+      run: pwd && env && ls -al && ls -al pipline && whoami
     - name: Lint all shell scripts
       run: ./pipeline/lintShellScripts.sh
     - name: Extract `draft-03` schema (from "empty schema)
